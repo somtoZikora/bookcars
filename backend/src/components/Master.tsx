@@ -121,7 +121,7 @@ function Master({
   return (
     <>
       <Header user={user} hidden={hideHeader || loading} notificationCount={notificationCount} />
-      {((!user && !loading) || (user && user.verified) || !strict) && !unauthorized ? (
+      {((!user && !loading) || (user) || !strict) && !unauthorized ? (
         <div className="content" style={style}>
           {children}
         </div>
