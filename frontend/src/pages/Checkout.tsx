@@ -947,7 +947,12 @@ function Checkout() {
                           <tbody>
                             <tr>
                               <td>
-                                <Checkbox checked={tosChecked} onChange={handleTosChange} color="primary" />
+                                <Checkbox
+                                  checked={tosChecked}
+                                  onChange={handleTosChange}
+                                  color="primary"
+                                  aria-label="Terms of Service Checkbox"
+                                />
                               </td>
                               <td>
                                 <Link href="/tos" target="_blank" rel="noreferrer">
