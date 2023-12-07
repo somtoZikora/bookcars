@@ -2,8 +2,8 @@
 
 FROM node:lts-alpine
 WORKDIR /bookcars/api
-COPY ./api ./
-COPY ./packages /bookcars/packages
+COPY ./ ./
+COPY ./packages ./packages
 RUN mkdir -p /var/www/cdn/bookcars/users
 RUN mkdir -p /var/www/cdn/bookcars/temp/users
 RUN mkdir -p /var/www/cdn/bookcars/cars
