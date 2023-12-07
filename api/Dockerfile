@@ -15,5 +15,5 @@ RUN mkdir -p /var/www/cdn/bookcars/temp/cars
 RUN npm install --omit=dev
 
 COPY nginx.conf /etc/nginx/nginx.conf
-CMD ["nginx", "&&", "npm", "start"]
+CMD nginx && npm start
 EXPOSE 4002
