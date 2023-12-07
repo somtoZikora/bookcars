@@ -6,7 +6,7 @@ import cors from 'cors'
  * @type {cors.CorsOptions}
  */
 const CORS_CONFIG: cors.CorsOptions = {
-    origin: true,
+    origin: ['http://localhost:3000', 'http://localhost:3001', 'https://thriving-liger-687a9b.netlify.app'],
     credentials: true,
 }
 
