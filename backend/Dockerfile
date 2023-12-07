@@ -3,7 +3,6 @@
 FROM node:lts-alpine as build
 WORKDIR /bookcars/backend
 COPY ./ ./
-COPY .env.docker .env
 COPY ./packages ./packages
 RUN npm install
 RUN npm run build
