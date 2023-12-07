@@ -5,10 +5,10 @@ import cors from 'cors'
  *
  * @type {cors.CorsOptions}
  */
-// const CORS_CONFIG: cors.CorsOptions = {
-//     origin: false,
-//     credentials: false,
-// }
+const CORS_CONFIG: cors.CorsOptions = {
+    origin: false,
+    credentials: true,
+}
 
 /**
  * CORS middleware.
@@ -19,4 +19,4 @@ import cors from 'cors'
  * @param {NextFunction} next
  * @returns {*}
  */
-export default () => cors()
+export default () => cors(CORS_CONFIG)
