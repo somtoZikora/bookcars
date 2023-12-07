@@ -15,7 +15,7 @@ if (env.HTTPS) {
     const credentials = { key: privateKey, cert: certificate }
     server = https.createServer(credentials, app)
 
-    server.listen(env.PORT, () => {
+    server.listen(env.PORT, '0.0.0.0', () => {
         console.log('HTTPS server is running on Port', env.PORT)
     })
 } else {

@@ -28,7 +28,7 @@ const __env__ = (name: string, required?: boolean, defaultValue?: string): strin
  *
  * @type {number}
  */
-export const PORT = Number.parseInt(__env__('BC_PORT', false, '4002'), 10)
+export const PORT = Number.parseInt(__env__('PORT', false, '4002'), 10)
 
 /**
  * Indicate whether HTTPS is enabled or not.
