@@ -84,16 +84,16 @@ function Master({
               onLoad(_user)
             }
           } else {
-            // await exit()
+            await exit()
           }
         } else {
-          // await exit()
+          await exit()
         }
       } catch {
-        // await exit()
+        await exit()
       }
     } else {
-      // await exit()
+      await exit()
     }
   })
 
